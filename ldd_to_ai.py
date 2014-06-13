@@ -120,13 +120,6 @@ def xml_file_to_swatches(data_set):
     return swatches_list
 
 
-def safe_list_get(l, idx, default):
-    try:
-        return l[idx]
-    except IndexError:
-        return default
-
-
 def main(input_xml, output_ase):
     swatches_list = xml_file_to_swatches(input_xml)
     ai_swatch_helper.write(swatches_list, output_ase)
