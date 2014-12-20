@@ -6,8 +6,6 @@ import argparse
 
 import swatch as ai_swatch_helper
 
-from colors_meta_helper import color_meta_by_material_id
-
 
 def color_meta_by_material_id(material_id):
     colors_metadata = {
@@ -83,6 +81,7 @@ def color_meta_by_material_id(material_id):
     color_name = color_name[:29] + (color_name[29:] and '..')
 
     return {'name': color_name, 'group': color_metadata[2]}
+
 
 def format_global_color_swatch_rgb(material_id, red, green, blue):
     color_metadata = color_meta_by_material_id(material_id)
