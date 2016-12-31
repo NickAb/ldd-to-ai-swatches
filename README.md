@@ -6,12 +6,14 @@ Convert Lego Digital Designer colors (materials.xml) into Adobe swatch file
 (.ase).
 
 optional arguments:
+```
   -h, --help            show this help message and exit
   -i INPUTFILE, --materialspath INPUTFILE
                         File path to LEGO Digital Designer Materials.xml
   -o OUTPUTFILE, --swatch OUTPUTFILE
                         File path to output Adobe swatches file (must
                         including file name and extension)
+```
 
 Materials.xml can be found inside db.lif shipped with LEGO Digital Designer
 
